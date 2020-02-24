@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 10px;
+    }
+
+    table.sign {
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    table.t01 {
+      table-layout: fixed;
+      width: 100%;
+
+    }
+
+    table.t00 {
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    table.deptuse {
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    table.site {
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    table.site tr th,
+    table.site tr td {
+      border-right: 2px solid;
+      border-bottom: 2px solid;
+      padding: 10px;
+    }
+
+    table.site tr th:first-child,
+    table.site tr td:first-child {
+      border-left: 2px solid;
+    }
+
+    table.site tr td {
+      border-top: 2px solid;
+      text-align: left;
+    }
+
+    /* top-left border-radius */
+    table.site tr:first-child td:first-child {
+      border-top-left-radius: 10px;
+    }
+
+    /* top-right border-radius */
+    table.site tr:first-child td:last-child {
+      border-top-right-radius: 10px;
+    }
+
+    /* bottom-left border-radius */
+    table.site tr:last-child td:first-child {
+      border-bottom-left-radius: 10px;
+    }
+
+    /* bottom-right border-radius */
+    table.site tr:last-child td:last-child {
+      border-bottom-right-radius: 10px;
+    }
+
+    input[type=text],
+    select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #b0b0b0;
+      color: black;
+      padding: 12px 50px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    p.declare {
+      line-height: 1.6;
+    }
+
+    td {
+      padding: 5px;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Passport Application</title>
+</head>
+
+<body>
+  <div class="content">
+    <form class="" action="mailto:delarosajg@students.national-u.edu.ph" method="post">
+      <p align="right">Form No. 1 - ENGLISH <br>
+        <b>NEW REGULAR PASSPORT APPLICATION (Adult) </b><br>
+        <font size="2">THIS FORM IS NOT FOR SALE</font> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </p>
+      <p>DEPARTMENT OF FOREIGN AFFAIRS <br>Office of Consular Affairs Last Revision: 07 October 2017
+        <table style="width:100%" class="t00">
+          <tr>
+            <td>INSTRUCTIONS: Please PRINT entries legibly using black or blue
+              ink only. Supply the necessary information and indicate <b>“N/A"</b> for
+              entries with no answers. Tick (√) boxes as appropriate.</td>
+            <td>
+              <table align="right" class="site">
+                <tr>
+                  <td>
+                    <font face="Courier" size="2"><b>Site: XXXXXXX <br>
+                        Date/Time: Day, DDMon YYYY/0000HR <br>
+                        Booking Reference no.:0123456789101112</font></b>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </p>
+
+      <table border="" style="width:100%">
+        <tr>
+          <td colspan="2" style="border:solid 5px">
+            <b>CAPTURE SITE PRE-PROCESSING (Do not write on this part)</b>
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 5px">
+            <b>
+              <font size="2"> APPOINTMENT VERIFICATION:</font>
+            </b> <br>
+            <textarea name="verification" rows="2" cols="40"></textarea>
+          </td>
+          <td style="border:solid 5px">
+            <b>
+              <font size="2">REMARKS:
+            </b></font> <br>
+            <textarea name="verificationremarks" rows="2" cols="40"></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <table border="2" style="width:100%">
+        <tr bgcolor="#b0b0b0">
+          <td colspan="3">
+            <center>
+              <b>PASSPORT APPLICANT'S INFORMATION</b>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">1. <b>LAST NAME</b></td>
+        </tr>
+        <tr>
+          <td colspan="3"> <input type="text" name="lastname" value="" size="100"><br></td>
+        </tr>
+        <tr>
+          <td colspan="3"><b>2. FIRST NAME</b></td>
+        </tr>
+        <tr>
+          <td colspan="3"><input type="text" name="firstname" value="" size="100"></td>
+        </tr>
+        <tr>
+          <td colspan="3">3. <b>MIDDLE NAME </b> or <b>MAIDEN LAST NAME</b></td>
+        </tr>
+        <tr>
+          <td colspan="3"><input type="text" name="middlename" value="" size="100"></td>
+        </tr>
+        <tr>
+          <td>4. <b>SEX</b><br><br>
+            <input type="radio" name="gender" value="Male"><label>Male</label><br>
+            <input type="radio" name="gender" value="Female"><label>Female</label><br><br><br> </td>
+          <td>5. <b>DATE OF BIRTH (ex. 01 Jan 2017) </b><br><br><input type="date" data-date="" data-date-format="DD MM YYYY" name="" value="dd/mm/yyyy"> <br> D D M M M Y Y Y Y <br><br> </td>
+          <td>6. <b>PLACE OF BIRTH</b> <br>
+            <font size="2">(For born in the PHL: Municipality/City & Province <br>
+              For born outside the PHL: Country)</font> <br><input type="text" name="placebirth" value="" size="40">
+          </td>
+        </tr>
+        <tr>
+          <td>7. <b>CIVIL STATUS</b> <br><br>
+            <input type="RADIO" name="civil" value="SINGLE"><label>SINGLE</label><br>
+            <input type="RADIO" name="civil" value="MARRIED"><label>MARRIED</label><br>
+            <input type="RADIO" name="civil" value="WIDOW/ER"><label>WIDOW/ER</label><br>
+            <input type="RADIO" name="civil" value="NULLIFIED/ ANNULLED"><label>NULLIFIED/ ANNULLED</label><br>
+            <input type="RADIO" name="civil" value="DIVORCED"><label>DIVORCED</label> <br><br>
+          </td>
+          <td>8a. <b>.HOW DID YOU ACQUIRE PHL CITIZENSHIP?
+            </b><br><br>
+            <input type="RADIO" name="citizen" value="BY BIRTH"><label><b>BY BIRTH</label><br>
+            <input type="RADIO" name="citizen" value="BY NATURALIZATION "><label>BY NATURALIZATION </label><br>
+            <input type="RADIO" name="citizen" value="BY RE-ACQUISITION (RA 9225)"><label>BY RE-ACQUISITION (RA 9225)</label><br>
+            <input type="RADIO" name="citizen" value="BY ELECTION"><label>BY ELECTION</label><br>
+            <input type="RADIO" name="citizen" value="BY LEGISLATION"><label>BY LEGISLATION</label><br><br>
+          </td>
+          <td>8b. <b>DID YOU EVER LOSE YOUR PH <br> CITIZENSHIP? </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="RADIO" name="losecitizen" value="YES">YES <input type="radio" name="losecitizen"
+              value="NO">NO
+            <br>
+            8c. <b>ARE YOU CURRENTLY A CITIZEN OF <br>
+              ANOTHER COUNTRY?</b> <input type="RADIO" name="CitizenofOtherCountry" value="YES">YES <input type="radio" name="losecitizen" value="NO">NO <br>
+            8e. <b>HAVE YOU SERVED IN ANY FOREIGN <br>
+              MILITARY?</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="RADIO" name="servedmilitary" value="YES">YES <input type="radio" name="losecitizen" value="NO">NO <br>
+            <b>IF Yes, what country? </b><br>
+            <input type="text" name="servedmilitarycountry" value="" size="60"></td>
+        </tr>
+        </tr>
+        <tr bgcolor="#b0b0b0">
+          <td colspan="3">
+            <center>
+              <b>APPLICANT'S CONTACT INFORMATION</b>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3"> 9a. <b>HOME ADDRESS: </b> <br><textarea name="homeAddress" rows="2" cols="80"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="3">9b. <b> PRESENT ADDRESS:</b> <br> <textarea name="presentAddress" rows="2" cols="80"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="3">10. <b>WHERE DO YOU WISH YOUR PASSPORT TO BE DELIVERED? <br>
+              &nbsp&nbsp&nbsp <input type="radio" name="deliver" value="HOME ADDRESS"><label>HOME ADDRESS</label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              <input type="radio" name="deliver" value="PRESENT ADDRESS"><label>PRESENT ADDRESS</label> </b> </td>
+        </tr>
+        <tr>
+          <td colspan="3">11. <b> TELEPHONE/MOBILE NUMBER: </b> <input type="text" name="number" value="" size="40"></td>
+        </tr>
+        <tr>
+          <td colspan="3"> 12. <b> e-MAIL ADDRESS:</b> <input type="text" name="email" value="" size="40"> </td>
+        </tr>
+        <tr>
+          <td colspan="3">13. <b>APPLICANT'S SPOUSE'S NAME: <input type="text" name="spouse" value="" size="40">
+            </b></td>
+        </tr>
+        <tr>
+          <td colspan="2.5">14a. <b> PERSON TO CONTACT IN CASE OF EMERGENCY:</b> <br> <input type="text" name="nameemergency" value=""></td>
+          <td colspan="2.5">14b. <b>TEL/MOBILE NO.:</b><input type="text" name="spousenumber" value="" size="40"></td>
+        </tr>
+        <tr bgcolor="#b0b0b0">
+          <td colspan="3">
+            <center>
+              <b>PARENTAL INFORMATION</b>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <table border="1" class="t01">
+              <tr>
+                <td>15. <b>FATHER'S DETAILS</b><br><b>Last Name:</b> <input type="text" name="fatherlastname" value="" size="40"></td>
+                <td> 16. <b>MOTHER'S DETAILS <br>
+                    Last Name:</b> <input type="text" name="motherlastname" value="" size="40"></td>
+              </tr>
+              <tr>
+                <td><b>First Name:</b> <input type="text" name="fatherfirstname" value="" size="40"></td>
+                <td> <b>First Name:</b> <input type="text" name="motherfirstname" value="" size="40"></td>
+              </tr>
+              <tr>
+                <td><b>Middle Name:</b> <input type="text" name="fathermiddlename" value="" size="40"></td>
+                <td> <b>Middle Name:</b> <input type="text" name="mothermiddlename" value="" size="40"></td>
+              </tr>
+              <tr>
+                <td><b>Citizenship</b><i>(at time of applicant's birth)</i> <br> <input type="text" name="fathercitizen" value="" size="50"></td>
+                <td> <b>Citizenship</b><i>(at time of applicant's birth)</i><br> <input type="text" name="mothercitizen" value="" size="50"></td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" bgcolor="#b0b0b0"> <b>
+              <center>
+                DECLARATION OF APPLICANT
+              </center>
+            </b> </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <p class="declare"><b>I HEREBY DECLARE AND AFFIRM </b> that 1) I am a Filipino citizen. 2) The information provided in this application is true
+              and correct. 3) The supporting documents attached are authentic. 4) I consent to the verification by the Philippine
+              Government of the information I provided to establish my personal particulars, and further consent to its use for
+              any lawful purpose. 5) I am aware that the information provided in this application will be treated in accordance
+              with relevant privacy regulations. 6) I am aware that under the law, I am allowed to hold only one valid regular
+              Philippine passport at a given time. 7) I am aware that making false statements in this passport application and
+              furnishing falsified or forged documents are punishable by fine or imprisonment, and grounds for suspension or
+              denial of application. 8) I understand and accept that the release of the passport could be subject to delay due to
+              unforeseen events beyond the control of the Department of Foreign Affairs. </p><br> <br>
+            <table style="width:100%" class="sign">
+              <tr>
+                <td><br>
+                  <center>
+                    <input type="text" name="signature" value="" size="30">
+                  </center>
+                </td>
+                <td><br>
+                  <center>
+                    <input type="date" name="datesignature" value="">
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <center>17. <b>
+                      SIGNATURE OVER PRINTED NAME
+                  </center></b>
+                </td>
+                <td>
+                  <center>18. <b>
+                      DATE (ex. 01 Jan 2017)
+                  </center></b>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+
+      <table border="1" style="width:100%" class="deptuse">
+        <tr bgcolor="#b0b0b0">
+          <td colspan="3" style="border:solid 5px">
+            <center>
+              <b>DO NOT WRITE BELOW THIS LINE. FOR THE DEPARTMENT'S USE ONLY.</b>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td style="border:solid 5px">
+            <center>
+              <b>PROOF OF PHL CITIZENSHIP</b></center><br>
+            <input type="radio" name="proofcitizen" value="BIRTH CERTIFICATE"><label><b>BIRTH CERTIFICATE </b>from PHL Statistics Authority </label><br>
+            <input type="radio" name="proofcitizen" value="CERTIFICATE OF NATURALIZATION"><label><b>CERTIFICATE OF NATURALIZATION </b></label><br>
+            <input type="radio" name="proofcitizen" value="IDENTIFICATION CERTIFICATE OF CITIZENSHIP"><label><b>IDENTIFICATION CERTIFICATE OF CITIZENSHIP </label><br>
+            <input type="radio" name="proofcitizen" value="ELECTION OF PHL CITIZENSHIP"><label><b>ELECTION OF PHL CITIZENSHIP </b> </label><br>
+            <input type="radio" name="proofcitizen" value="Others:"><label><b>Others: </b></label><br>
+            <input type="text" name="proofcitizen" value=""><br><br>
+          </td>
+          <td style="border:solid 5px">
+            <center>
+              <b>IDENTITY DOCUMENT SUBMITTED</b>
+            </center> <br>
+            <input type="radio" name="id" value="COMELEC Voter’s ID"><label><b>COMELEC Voter’s ID</b> </label><br>
+            <input type="radio" name="id" value="LTO Driver’s License"><label><b>LTO Driver’s License</b> </label><br>
+            <input type="radio" name="id" value="Professional Regulatory Commission ID"><label><b>Professional Regulatory Commission ID</b> </label><br>
+            <input type="radio" name="id" value="Unified Multipurpose ID (UMID)"><label><b>Unified Multipurpose ID (UMID)</b> </label><br>
+            <input type="radio" name="id" value="PWD ID"><label><b>PWD ID</b> </label><br>
+            <input type="radio" name="id" value="GSIS / SSS ID"><label><b>GSIS / SSS ID</b> </label><br>
+            <input type="radio" name="id" value="Senior Citizen’s ID"><label><b>Senior Citizen’s ID</b> </label><br>
+            <input type="radio" name="id" value="Others:"><label><b>Others:</b> </label><br>
+            <input type="text" name="id" value="">
+
+          </td>
+          <td style="border:solid 5px">
+            <center>
+              <b>SUPPORTING DOCUMENTS</b></center><br>
+            <input type="radio" name="supporting" value="Marriage Certificate"><label><b>Marriage Certificate</b> from PHL Statistics Authority</label><br>
+            <input type="radio" name="supporting" value="Voter’s Registration Record"><label><b>Voter’s Registration Record</b> </label><br>
+            <input type="radio" name="supporting" value="Court Order"><label><b>Court Order</b> </label><br>
+            <input type="radio" name="supporting" value="NBI Clearance"><label><b>NBI Clearance</b> </label><br>
+            <input type="radio" name="supporting" value="Others:"><label><b>Others:</b> </label><br>
+            <input type="text" name="supporting" value=""><br><br><br><br>
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border:solid 5px"><b>REMARKS: </b><br>
+            <textarea name="REMARKS" rows="2" cols="40"></textarea>
+          </td>
+          <td style="border:solid 5px"><b>PASSPORT WATCHLIST VERIFICATION:</b><br>
+            <input type="text" name="watchlistverification" value=""> </td>
+        </tr>
+        <tr>
+          <table border="1" width="100%">
+            <tr>
+              <td width="50%" style="border:solid 5px"><b>PROCESSOR’S SIGNATURE:</b><br><br> </td>
+              <td width="50%" style="border:solid 5px"><b>ENCODER’S SIGNATURE:</b><br><br> </td>
+            </tr>
+            <tr>
+              <td width="50%" style="border:solid 5px"><b>OFFICIAL RECEIPT/PAYMENT SLIP NO.:</b><br>
+                <input type="text" name="receiptno" value="">
+              </td>
+              <td width="50%" style="border:solid 5px"><b>DATE OF TRANSACTION:</b><br>
+                <input type="date" name="datetransaction" value="">
+              </td>
+            </tr>
+          </table>
+        </tr>
+      </table>
+
+      <p align="right"><input type="submit" value="Submit"><br><br> <b>END <br><br>
+        </b> Page <b>2 </b> of <b> 2</b> </p>
+    </form>
+  </div>
+</body>
+
+</html>
